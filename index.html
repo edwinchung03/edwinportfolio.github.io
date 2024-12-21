@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Edwin Chung</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Edwin Chung</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/second_profile.jpg" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Edwin Chung</h1>
+        <p class="section__text__p2">Software Engineer & Full-stack Developer</p>
+        <p class="section__text__p2">Mobile App Developer & Data Scientist</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/EdwinChungCV.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/LinkedIn_Logo.png"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/edwin-chung-094b241b8'"
+          />
+          <img
+            src="./assets/github_icon.png"
+            class="icon"
+            onclick="location.href='https://github.com/edwinchung03'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/my_profile.jpg"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/George_Brown_logo.png"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>3 years <br />Computer Programming & Analysis <br /> 3.6 GPA</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/language_icon.png"
+                class="icon"
+              />
+              <h3>Languages</h3>
+              <p>English(Fluent)<br />Spanish(Native) <br/>Korean(Fluent)</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p style="text-align: justify;">
+              Hello! I’m Edwin Chung, a passionate and dedicated Computer Science beginner
+              with a strong drive to learn and grow in the professional field. I am a fast learner who loves challenges
+              and enjoys turning ideas into reality through creativity and hard work.<br><br>
+              I’ve cultivated a solid foundation in problem-solving, critical thinking and collaboration through academic projects 
+              and personal initiatives. For example, I recently created a complex microservice web using Sprint Boot and being an important
+              key for the team.<br><br> Beyond academics, I’m deeply committed to build impactful solutions and contributing to
+              meaningful projects. I enjoy exploring coding or developments, and I’m eager to apply my skills to real-world problems.<br><br>
+              As I step into the professional world, I am excited about opportunities to collaborate with experienced teams,
+              learn from industry challenges, and contribute to impactful projects. My ultimate goal is to combine my passion
+              for engineering with my problem-solving mindset to create solutions that make a difference.<br><br>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/down-arrow.svg"
+        class="icon arrow"
+        onclick="location.href='./#skills'"
+      />
+    </section>
+    <section id="skills">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="skills-details-container">
+        <div class="about-containers">
+          <div class="skill-container">
+            <h2 class="skills-sub-title">SKILLS</h2>
+            <div class="article-container">
+              <article> <h3>MERN stack</h3></article>
+              <article> <h3>Spring Boot</h3></article>
+              <article> <h3>Data Cleaning (Python and SQL)</h3></article>
+              <article> <h3>React-Native</h3></article>  
+              <article> <h3>ASP.NET in C#</h3></article>
+              <article> <h3>Public Deployment(Docker)</h3></article>            
+              <article> <h3>Data Structures and Algorithms (Java)</h3></article>
+              <article> <h3>Microsoft Azure</h3></article>
+              <article> <h3>DevOps</h3></article>
+              <article> <h3>Back-end (PHP)</h3></article>
+
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <img
+        src="./assets/down-arrow.svg"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="skills-details-container">
+        <div class="about-containers">
+
+          <div class="details-container color-container">
+            <h2 class="skills-sub-title project-title">Employee system PYTHON</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://gitfront.io/r/edwin03/aPfudAnXpReP/Employee-system-PYTHON/'"
+              >
+                Github
+              </button>
+
+              <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('./assets/PythonVideo.mp4')"
+            >
+              Preview of the Program
+            </button>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <h2 class="skills-sub-title project-title">Travel Booking System with C# ASP.Net</h2>
+            <div class="btn-container">
+              <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('./assets/csharp demostration.mp4')"
+            >
+              Preview of the Program
+            </button>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+
+            <h2 class="skills-sub-title project-title">Insertion & Selection Sort JAVA</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/edwinchung03/Insertion_Selection_Sort_Java'"
+              >
+                Github
+              </button>
+
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('./assets/Insertion & Selection sort LabTest.pdf')"
+
+              >
+                Exercise Explanation
+              </button>
+
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <h2 class="skills-sub-title project-title">Linked List JAVA</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/edwinchung03/Linked_List_JAVA'"
+              >
+                Github
+              </button>
+
+              <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('./assets/Linked List JAVA.pdf')"
+
+              >
+              Exercise Explanation
+            </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <img
+        src="./assets/down-arrow.svg"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/gmail_icon.jpg"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:edwinchung1120@gmail.com">edwinchung1120@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/LinkedIn_Logo.png"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/edwin-chung-094b241b8">LinkedIn</a></p>
+        </div>
+      </div>
+    </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Edwin Chung.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
